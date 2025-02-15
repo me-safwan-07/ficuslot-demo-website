@@ -1,50 +1,82 @@
-# React + TypeScript + Vite
+# Ficuslot Demo Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive business website built using React, TypeScript, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Fast and Lightweight**: Powered by Vite for an optimized development experience.
+- **TypeScript Support**: Ensures type safety throughout the application.
+- **Tailwind CSS Integration**: For modern, responsive, and easily customizable UI.
+- **Framer Motion Animations**: Smooth animations for an enhanced user experience.
+- **Reusable Components**: Modular and well-structured code for easy scalability.
+- **SEO Optimized**: Meta tags and structured data for better search engine visibility.
+- **Mobile-Friendly**: Fully responsive layout for a seamless experience on all devices.
+- **Contact Form**: Built-in form for user inquiries.
+- **Testimonials and Blog Sections**: Showcasing customer feedback and latest updates.
+- **WhatsApp Chat Button**: Quick contact via WhatsApp.
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+ficuslot-demo-website/
+├── public/
+│   ├── assets/
+├── src/
+│   ├── components/
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── Services.tsx
+│   │   ├── Testimonials.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── index.css
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+├── vite.config.ts
+├── README.md
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🛠 Installation & Setup
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To run this project locally, follow these steps:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/ficuslot-demo-website.git
+cd ficuslot-demo-website
 ```
+
+### 2️⃣ Install Dependencies
+```sh
+npm install
+```
+
+### 3️⃣ Start the Development Server
+```sh
+npm run dev
+```
+
+### 4️⃣ Build for Production
+```sh
+npm run build
+```
+
+### 5️⃣ Preview the Production Build
+```sh
+npm run preview
+```
+
+## 🌐 Deployment
+
+The project can be easily deployed to platforms like Vercel, Netlify, or AWS.
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
